@@ -11,7 +11,7 @@ const Products = () => {
             <p>{product.name}</p>
             <p>{product.description}</p>
             <p className='text-red-600'>${product.price}</p>
-            <button className='bg-emerald-900 flex justify-center p-2 rounded-4xl text-white mx-auto'>Add to cart</button>
+            <button className='bg-emerald-900 flex justify-center p-2 rounded-4xl text-white mx-auto cursor-pointer'>Add to cart</button>
           </div>
           
         <div>
