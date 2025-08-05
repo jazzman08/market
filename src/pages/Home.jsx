@@ -2,6 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { products } from '../constants/data'
 import { customerName } from '../constants/customer'
+import Products from './Products'
+import Greeting from '../components/Greeting'
+import Counter from '../components/Counter'
 
 
 const Home = () => {
@@ -14,9 +17,13 @@ const Home = () => {
             <p className='text-lg mt-2'>Explore our latest products below:</p>
           </div>
         ))}
+        <Greeting name="John Doe"/>
+        <Greeting name="Jane Doe"/>
+
+        <Counter/>
       </div>
       <div className='flex items-center justify-center gap-10 p-10  '>
-      {products.map((product, id) => (
+      {/* {products.map((product, id) => (
         <div key={product.id} className='bg-yellow-400 rounded-lg'>
           <img src={product.image} alt={product.name} className="w-full h-60 object-cover rounded-lg" />
           <div className='p-4'>
@@ -31,8 +38,8 @@ const Home = () => {
         </div>
       </div>
 
-      ))}
-      
+      )).slice(0, 2)} */}
+      <Products/>
     </div>
     
 

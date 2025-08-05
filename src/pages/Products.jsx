@@ -19,7 +19,7 @@ const Products = () => {
         </div>
       </div>
 
-      ))}
+      )).slice(2, 4)}
       
     </div>
   )
