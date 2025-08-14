@@ -17,6 +17,7 @@ const Navbar = () => {
         <Link to={"/products"}><li>PRODUCTS</li></Link>
         <Link to={"/about"}><li>ABOUT</li></Link>
         <Link to={"/shop"}><li>SHOP</li></Link>
+        <Link to={"/test"}><li>TEST</li></Link>
       </div>
       <div className='flex gap-5 items-center text-2xl'>
         <Link to={"https://twitter.com/"} target="_blank" rel="noopener noreferrer"><RiTwitterXFill /></Link>
